@@ -1,0 +1,14 @@
+# --- Configuração do n8n ---
+DOMAIN_NAME=COLOQUE_DOMINIO_AQUI
+GENERIC_TIMEZONE=America/Sao_Paulo
+
+# --- Chave de Criptografia ---
+# Chave de criptografia das credenciais
+# openssl rand -hex 32
+# openssl rand -base64 32
+# IMPORTANTE: Se perder esta chave, perde acesso a todas as credenciais salvas no n8n.
+N8N_ENCRYPTION_KEY="COLOQUE_CHAVE_DE_CRIPTOGRAFIA_AQUI"
+
+# --- Configuração do Task Runner (Python/JS Externo)
+# Shared secret entre o n8n e o container de runner
+N8N_RUNNERS_AUTH_TOKEN="COLOQUE_TOKEN_DE_AUTENTICACAO_AQUI"
